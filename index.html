@@ -31,9 +31,27 @@
       .font-worksans {
         font-family: "Work Sans", sans-serif;
       }
+
+      body {
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+      }
+
+      body::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+
+      body::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
     </style>
   </head>
-  <body class="h-screen overflow-hidden min-w-[375px] md:min-w-[1024px] bg-[#F9F0FF]">
+  <body class="min-w-[375px] md:min-w-[1024px] bg-[#F9F0FF]">
     <img
       class="md:hidden w-full"
       src="./assets/images/background-pattern-mobile.svg"
